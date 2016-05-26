@@ -1,0 +1,42 @@
+﻿.homePageBack {
+    background: center no-repeat;
+    background-image: url('../images/stepping-stones1.jpg');
+    background-size: 100% auto;
+   
+}
+div.skillz{
+    color:white;
+}
+.rocks {
+    background: center no-repeat;
+     background-size: 100% auto;
+    background-image: url('../images/ZLEtHT9.jpg');
+}
+
+.overlay {
+    margin: 0 auto;
+    padding: 10px;
+    background: #434647;
+    color: #fff;
+    opacity: .6;
+    width: 90%;
+    height: 30%;
+}
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}

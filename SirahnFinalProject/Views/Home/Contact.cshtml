@@ -1,22 +1,65 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
 <h3>Below you will find my contact info...</h3>
 
 
 <address>
+   <div class="moreskillz">
+
+       <i class="fa fa-map-marker" aria-hidden="true"></i>
     615 Glen Eden Court<br />
     Aurora, OH 44202<br />
-    <abbr title="Phone">P:</abbr>
+       <i class="fa fa-mobile" aria-hidden="true"></i>  <abbr title="Phone">P:</abbr>
     718-612-3774<br/>
     
+   </div>
 </address>
 
 <address>
     <strong>Send me a nice email sometime:</strong>   <a href="mailto:SirahnB@gmail.com">SirahnB@Gmail.com</a><br />
    
 </address>
+<style>
+    #googleMap {
+        width: 50%; 
+        height: 200px; 
+        -webkit-filter: none;
+        filter: grayscale(100%);
+    }
+    
+</style>
+
+<div id="googleMap"></div>
+
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+    var myCenter = new google.maps.LatLng(41.3143048, -81.3496343);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 @*Social Network links*@
+     <div class="moreskillz">
 <h3>Github</h3><a href="https://github.com/Sirahn" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
 <h3>LinkedIn</h3><a href="https://www.linkedin.com/in/sirahnbutler" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+     </div>

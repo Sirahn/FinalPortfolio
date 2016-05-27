@@ -217,6 +217,7 @@
     <Content Include="images\PretzelAgain.jpg" />
     <Content Include="images\pretzelTime.jpg" />
     <Content Include="images\stepping-stones1.jpg" />
+    <Content Include="images\zen-water-istock-large-curved-rocks.jpg" />
     <Content Include="images\ZLEtHT9.jpg" />
     <Content Include="Models\PortfolioProject.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -1,11 +1,14 @@
-﻿.homePageBack {
-    background: center no-repeat;
-    background-image: url('../images/stepping-stones1.jpg');
+﻿
+body {
+    background-repeat: no-repeat;
+    background-image: url('../images/zen-water-istock-large-curved-rocks.jpg');
     background-size: 100% auto;
-   
 }
 div.skillz{
     color:white;
+}
+div.moreskillz{
+    color:black;
 }
 .rocks {
     background: center no-repeat;
@@ -13,6 +16,11 @@ div.skillz{
     background-image: url('../images/ZLEtHT9.jpg');
 }
 
+.lowerHed{
+    font-size:60px;
+    font-family:'Malgun Gothic',cursive;
+
+}
 .overlay {
     margin: 0 auto;
     padding: 10px;

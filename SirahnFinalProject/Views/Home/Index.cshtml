@@ -1,35 +1,44 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
 <div class="homePageBack">
 
+
 <div class="overlay">
-    <h1>WELCOME TO MY WORLD OF SERENITY </h1>
+    <h1 class="lowerHed">WELCOME TO MY WORLD OF SERENITY </h1>
     <p class="lead">I'm Sirahn and I have discovered a Zen way of being</p>
-    <p><a href="http://buddhaimonia.com/101-zen-sayings-and-proverbs/" class="btn btn-primary btn-lg" onclick="">Click For A Zen Saying</a></p>
+    <p><a href="http://buddhaimonia.com/101-zen-sayings-and-proverbs/" class="btn btn-success btn-lg" onclick="">Click For A Zen Saying</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
+        <div class="skillz">
+
         <h2>Looking Forward To The Future</h2>
         <p>
             I'm looking forward to everything the future holds for me.  Entering the world of computer programming is very exciting.  Entering the world of the unknown is always an adventure.
         </p>
+        </div>
 
 
-        <p><a class="btn btn-default" @Html.ActionLink("About", "About", "Home")</a></p>
+        <p><a class="btn btn-success" @Html.ActionLink("About", "About", "Home")></a></p>
     </div>
     <div class="col-md-4">
+        <div class="skillz">
+
         <h2>My Awesome Projects</h2>
         <p>From the beginning of my career at WeCanCode IT, I have watched my level of understanding progress.  I have projects of varying levels of difficulty that showcase my range of understanding.</p>
-        <p><a class="btn btn-default" @Html.ActionLink("Projects", "Index", "PortfolioProjects")</a></p>
-        <p><a class="btn btn-default" target="_blank" href="https://github.com/Sirahn">GIT HUB</a></p>
+        <p><a class="btn btn-success" @Html.ActionLink("Projects", "Index", "PortfolioProjects")></a></p>
+        </div>
+        <p><a class="btn btn-success" target="_blank" href="https://github.com/Sirahn">GIT HUB</a></p>
     </div>
     <div class="col-md-4">
+        <div class="skillz">
+
         <h2>Stay In Touch With Me</h2>
         <p>Staying in touch with me is easier than you may realize.  Here you will be able to check out all my social networking info and keep in touch.</p>
-        <p><a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/sirahnbutler">LinkedIn</a></p>
+        </div>
+        <p><a class="btn btn-success" target="_blank" href="https://www.linkedin.com/in/sirahnbutler">LinkedIn</a></p>
     </div>
 </div>
 </div>
